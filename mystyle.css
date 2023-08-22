@@ -1,281 +1,245 @@
-.container {
-position: relative;
-width: 50%;
-}
-
-.image {
-display: block;
-width: 100%;
-height: auto;
-}
-
-.overlay {
-position: absolute;
-top: 0;
-bottom: 0;
-left: 0;
-right: 0;
-height: 100%;
-width: 100%;
-opacity: 0;
-transition: .5s ease;
-background-color: #008CBA;
-}
-
-.container:hover .overlay {
-opacity: 1;
-}
-
-.text {
-color: white;
-font-size: 54px;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
--ms-transform: translate(-50%, -50%);
-font-weight: bold;
-}
-.title_heading {
-font-size: 54px;
-line-height: 1;
-font-weight: bold;
-
-}
-.customheading2 {
-font-size: 21px;
-font-weight: bold;
-line-height: 1.2;
-}
-
-
 * {
-box-sizing: border-box;
-}
-a:link, a:visited {
-color: #93C4D1;
-}
-
-a:hover, a:active {
-background-color: #3E88A5;
-}
-
-body {
-font-family: 'Times New Roman';
-padding: 10px;
-background: #ffcad4;
-}
-
-/* Header/Blog Title */
-.header {
-padding: 30px;
-text-align: center;
-background: #fadde1;
-}
-
-.header h1 {
-font-size: 50px;
-}
-
-/* Style the top navigation bar */
-.topnav {
-overflow: hidden;
-background-color: #f9bec7;
-}
-
-/* Style the topnav links */
-.topnav a {
-float: left;
-display: block;
-color: #000000;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
-}
-
-/* Change color on hover */
-.topnav a:hover {
-background-color: #ff5d8f;
-color: rgb(255, 255, 255);
-}
-
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {   
-float: left;
-width: 75%;
-}
-
-/* Right column */
-.rightcolumn {
-float: left;
-width: 25%;
-background-color: #ffcad4;
-padding-left: 20px;
-}
-
-/* Fake image */
-.fakeimg {
-background-color: #aaa;
-width: 100%;
-padding: 20px;
-}
-
-/* Add a card effect for articles */
-.card {
-background-color: #fadde1;
-padding: 20px;
-margin-top: 20px;
-}
-
-/* Clear floats after the columns */
-.row::after {
-content: "";
-display: table;
-clear: both;
-}
-
-/* Footer */
-.footer {
-padding: 20px;
-text-align: center;
-background: #ddd;
-margin-top: 20px;
-}
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-.leftcolumn, .rightcolumn {   
-width: 100%;
-padding: 0;
-}
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-.topnav a {
-float: none;
-width: 100%;
-}
-}
-/*Button Formatting*/
-/* CSS */
-.button-48 {
-appearance: none;
-background-color: #f9bec7;
-border-width: 0;
-box-sizing: border-box;
-color: #000000;
-cursor: pointer;
-display: inline-block;
-font-family: Time New Roman;
-font-size: 14px;
-font-weight: 500;
-letter-spacing: 0;
-line-height: 1em;
-margin: 2px 2px;
-opacity: 1;
-outline: 0;
-padding: 1.0em 1.2em;
-position: relative;
-text-align: center;
-text-decoration: none;
-text-rendering: geometricprecision;
-text-transform: uppercase;
-transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
-user-select: none;
--webkit-user-select: none;
-touch-action: manipulation;
-vertical-align: baseline;
-white-space: nowrap;
-}
-
-.button-48:before {
-animation: opacityFallbackOut .5s step-end forwards;
-backface-visibility: hidden;
-background-color: #ff5d8f;
-clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
-content: "";
-height: 100%;
-left: 0;
-position: absolute;
-top: 0;
-transform: translateZ(0);
-transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
-width: 100%;
-}
-
-.button-48:hover:before {
-animation: opacityFallbackIn 0s step-start forwards;
-clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
-}
-
-.button-48:after {
-background-color: #f9bec7;
-}
-
-.button-48 span {
-z-index: 1;
-position: relative;
-}
-
-/*Data analytical Button*/
-/* CSS */
-.button-ds {
-appearance: none;
-background-color: #fcc4bd;
-border-width: 0;
-box-sizing: border-box;
-color: #000000;
-cursor: pointer;
-display: inline-block;
-font-family: Time New Roman;
-font-size: 14px;
-font-weight: 500;
-letter-spacing: 0;
-line-height: 1em;
-margin: 2px 2px;
-opacity: 1;
-outline: 0;
-padding: 1.0em 1.2em;
-position: relative;
-text-align: center;
-text-decoration: none;
-text-rendering: geometricprecision;
-text-transform: uppercase;
-transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
-user-select: none;
--webkit-user-select: none;
-touch-action: manipulation;
-vertical-align: baseline;
-white-space: nowrap;
-}
-
-.button-ds:before {
-animation: opacityFallbackOut .5s step-end forwards;
-backface-visibility: hidden;
-background-color: #f99385;
-clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
-content: "";
-height: 100%;
-left: 0;
-position: absolute;
-top: 0;
-transform: translateZ(0);
-transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
-width: 100%;
-}
-
-.button-ds:hover:before {
-animation: opacityFallbackIn 0s step-start forwards;
-clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
-}
-
-.button-ds:after {
-background-color: #fcc4bd;
-}
-
-.button-ds span {
-z-index: 1;
-position: relative;
-}
+    box-sizing: border-box;
+  }
+  a:link, a:visited {
+    color: #93C4D1;
+  }
+  
+  a:hover, a:active {
+    background-color: #3E88A5;
+  }
+  
+  body {
+    font-family: 'Times New Roman';
+    padding: 10px;
+    background: #ffcad4;
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    text-align: center;
+    background: #fadde1;
+  }
+  
+  .header h1 {
+    font-size: 50px;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #f9bec7;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ff5d8f;
+    color: rgb(255, 255, 255);
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #ffcad4;
+    padding-left: 20px;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: #fadde1;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+  /*Button Formatting*/
+  /* CSS */
+  .button-48 {
+    appearance: none;
+    background-color: #f9bec7;
+    border-width: 0;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Time New Roman;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1em;
+    margin: 2px 2px;
+    opacity: 1;
+    outline: 0;
+    padding: 1.0em 1.2em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-rendering: geometricprecision;
+    text-transform: uppercase;
+    transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: normal;
+    word-wrap: break-word;
+  }
+  
+  .button-48:before {
+    animation: opacityFallbackOut .5s step-end forwards;
+    backface-visibility: hidden;
+    background-color: #ff5d8f;
+    clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateZ(0);
+    transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+    width: 100%;
+  }
+  
+  .button-48:hover:before {
+    animation: opacityFallbackIn 0s step-start forwards;
+    clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+  }
+  
+  .button-48:after {
+    background-color: #f9bec7;
+  }
+  
+  .button-48 span {
+    z-index: 1;
+    position: relative;
+  }
+  
+  /*Data analytical Button*/
+  /* CSS */
+  .button-ds {
+    appearance: none;
+    background-color: #fcc4bd;
+    border-width: 0;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Time New Roman;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1em;
+    margin: 2px 2px;
+    opacity: 1;
+    outline: 0;
+    padding: 1.0em 1.2em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-rendering: geometricprecision;
+    text-transform: uppercase;
+    transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: normal;
+    word-wrap: break-word;
+  }
+  
+  .button-ds:before {
+    animation: opacityFallbackOut .5s step-end forwards;
+    backface-visibility: hidden;
+    background-color: #f99385;
+    clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateZ(0);
+    transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+    width: 100%;
+  }
+  
+  .button-ds:hover:before {
+    animation: opacityFallbackIn 0s step-start forwards;
+    clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+  }
+  
+  .button-ds:after {
+    background-color: #fcc4bd;
+  }
+  
+  .button-ds span {
+    z-index: 1;
+    position: relative;
+  }
+  
+  .follow-card {
+    /* Existing card styles ... */
+    background-color: #fadde1;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .follow-card p {
+    /* Apply text wrapping styles to paragraphs in the Follow Me card */
+    white-space: normal;
+    word-wrap: break-word;
+  }
