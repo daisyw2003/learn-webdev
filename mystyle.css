@@ -87,7 +87,7 @@ clear: both;
 .footer {
 padding: 20px;
 text-align: center;
-background: #ddd;
+background: #fadde1;
 margin-top: 20px;
 }
 
@@ -230,11 +230,11 @@ z-index: 1;
 position: relative;
 }
 
-/*Data analytical Button*/
+/*Coursework Button*/
 /* CSS */
-.button-ds {
+.button-CW {
 appearance: none;
-background-color: #fcc4bd;
+background-color: #ffa1c7;
 border-width: 0;
 box-sizing: border-box;
 color: #000000;
@@ -263,10 +263,10 @@ white-space: normal;
 word-wrap: break-word;
 }
 
-.button-ds:before {
+.button-CW:before {
 animation: opacityFallbackOut .5s step-end forwards;
 backface-visibility: hidden;
-background-color: #f99385;
+background-color: #ff66a3;
 clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
 content: "";
 height: 100%;
@@ -278,16 +278,16 @@ transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .
 width: 100%;
 }
 
-.button-ds:hover:before {
+.button-CW:hover:before {
 animation: opacityFallbackIn 0s step-start forwards;
 clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
 }
 
-.button-ds:after {
-background-color: #fcc4bd;
+.button-CW:after {
+background-color: #ffa1c7;
 }
 
-.button-ds span {
+.button-CW span {
 z-index: 1;
 position: relative;
 }
