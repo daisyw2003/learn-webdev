@@ -65,9 +65,8 @@ padding-left: 20px;
 
 /* Fake image */
 .fakeimg {
-background-color: #aaa;
-width: 100%;
-padding: 20px;
+    max-width: 100%;
+    height: auto;
 }
 
 /* Add a card effect for articles */
