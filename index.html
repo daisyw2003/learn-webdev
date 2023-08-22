@@ -12,8 +12,42 @@ a:visited {
 a:hover, a:active {
   background-color: CornflowerBlue;
 }
-img{
-  float: right;
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 .title_heading {
   font-size: 54px;
@@ -30,8 +64,14 @@ img{
 </head>
 <body> <!-- viewable content -->
   <!-- <script src="./experiments.js"></script> -->
+<div class="container">
+  <img src="me_webdev.png" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="title_heading"> Daisy Wang </div>
+  </div>
+</div>
 <div>
-  <div class='title_heading'> Daisy Wang</div>  <img src="me_webdev.png" width="235" height="235" alt="Picture of Myself">
+  <div class='title_heading'> Daisy Wang</div>  
 </div>
 <section>
   <h2><u>ACADEMICS</u></h2> 
