@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    }
+    a:link, a:visited {
+    color: #93C4D1;
+    }
+    
+    a:hover, a:active {
+    background-color: #3E88A5;
+    }
+    
+    body {
+    font-family: 'Times New Roman';
+    padding: 10px;
+    background: #ffcad4;
+    }
+    
+    /* Header/Blog Title */
+    .header {
+    padding: 30px;
+    text-align: center;
+    background: #fadde1;
+    }
+    
+    .header h1 {
+    font-size: 50px;
+    }
+    
+    /* Style the top navigation bar */
+    .topnav {
+    overflow: hidden;
+    background-color: #f9bec7;
+    }
+    
+    /* Style the topnav links */
+    .topnav a {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+    
+    /* Change color on hover */
+    .topnav a:hover {
+    background-color: #ff5d8f;
+    color: rgb(255, 255, 255);
+    }
+    
+    .follow-card {
+    /* Existing card styles ... */
+    background-color: #fadde1;
+    padding: 20px;
+    margin-top: 20px;
+    }
+    
+    .follow-card p {
+    /* Apply text wrapping styles to paragraphs in the Follow Me card */
+    white-space: normal;
+    word-wrap: break-word;
+    }
+
+.timeline{
+    width:100%;
+    background-color:#ffcad4;
+    color:#650000;
+    padding:30px 20px;
+}
+.timeline ul{
+    list-style-type:none;
+    border-left:6px solid #fadde1;
+    padding:10px 5px;
+}
+.timeline ul li{
+    padding:20px 20px;
+    position:relative;
+    cursor:pointer;
+    transition:.5s;
+}
+.timeline ul li span{
+    display:inline-block;
+    background-color:#f9bec7;
+    border-radius:25px;
+    padding:2px 5px;
+    font-size:15px;
+    text-align:center;
+}
+.timeline ul li .content h3{
+    color:#300010;
+    font-size:17px;
+    padding-top:5px;
+}
+.timeline ul li .content p{
+    padding:5px 0px 15px 0px;
+    font-size:15px;
+}
+.timeline ul li:before{
+    position:absolute;
+    content:'';
+    width:11px;
+    height:11px;
+    background-color:#c9184a;
+    border-radius:50%;
+    left:-13px;
+    top:28px;
+    transition:.5s;
+}
+.timeline ul li:hover{
+    background-color:#fd8091;
+}
+.timeline ul li:hover:before{
+    background-color:#ff0a54;
+    box-shadow:0px 0px 10px 2px #ff0a54;
+}
+@media (max-width:300px){
+    .timeline{
+        width:100%;
+        padding:30px 5px 30px 10px;
+    }
+    .timeline ul li .content h3{
+        color:#c9184a;
+        font-size:15px;
+    }
+
+}
