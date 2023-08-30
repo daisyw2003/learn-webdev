@@ -427,11 +427,7 @@ border-radius: 6px;
 .right {
     left: 0%;
 }
-.left:hover {
-    background-color: #ffbf81;
-    color: white;
-}
-.right:hover {
+.container:hover {
     background-color: #ffbf81;
     color: white;
 }
