@@ -2,12 +2,10 @@
     box-sizing: border-box;
     }
     a:link, a:visited {
-    color: #93C4D1;
+    text-decoration: none;
+    color: #c9184a;
     }
     
-    a:hover, a:active {
-    background-color: #3E88A5;
-    }
     
     body {
     font-family: 'Times New Roman';
