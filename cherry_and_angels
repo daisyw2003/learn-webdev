@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="homePage.css">
+</head>
+<body>
+
+<div class="header">
+  <h1>Daisy's Website</h1>
+  <p> This is mostly my resume and showing I can make a website :D This website is so hot, I'm in love <3 </p>
+</div>
+
+<div class="topnav">
+  <a href="/learn-webdev/index.html">About Me</a>
+  <a href="/learn-webdev/pagetwo.html">Creative Writing Works</a>
+  <a href="#othact">Other Activities</a>
+</div>
+
+<div class="row">
+    <div class="card">
+        <h2 id = "about-me">Cherry Blossoms</h2>
+        They all notice him. How can they not? He’s standing in the middle of the road, surrounded by a rain of soft pink petals. He's standing in the exact spot where his best friend had been killed when a car hit him while he was riding his bike on the last day of the previous semester. But that’s all they do. Notice him. They notice him and pause briefly before returning to their eager conversations about the upcoming semester.
+        As bikes whistle past him, their wheels squeaking and rattling, he feels the newly familiar feeling of acid racing up his throat and a chill settle in his body as the squeaking and rattling becomes louder and more taunting. He tries to calm his hammering heart, and when he finds that he cannot, he sprints the rest of the way to school, running away from the nightmarish sounds of the bike.
+        He gets to class and scoots past the empty aisle table – save for sticker residue, a wilted flower, and a familiar faded smiley face – to reach his seat by the window. During lunch, he pulls out two sandwiches and puts one on the empty table next to him as if his deskmate would suddenly appear and start eating and joking with him. 
+        When the school day has ended, he stays until all his classmates have left and looks at the untouched sandwich. He wonders if he should leave it there like an offering to a dead ancestor. In the end, he picks up the sandwich and reminds himself to tell his mom to not make the extra.
+        As he retraces his steps from the morning, the cherry blossoms coat the ground like a dainty pink carpet, having settled without the presence of bikes messing it all up. He turns to tell someone to look at the pretty road before realizing that there is no one. So when he looks up to blink away tears, he sees that the trees only have a scattering of survivors. Most of its branches are empty, and the surviving petals are lonely, separated from their friends by forces out of their control. 
+        “I miss you.” The air barely passes through his lips, and as the wind blows, he closes his eyes and clasps his hands, hoping that the wind will carry his words to his friend.
+    </div>
+</div>
+
+</body>
+</html>
