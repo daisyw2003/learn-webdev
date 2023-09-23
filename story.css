@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    }
+    
+    body {
+    font-family: 'Times New Roman';
+    padding: 14px;
+    background: #ffcad4;
+    margin-left: 30px;
+    margin-right: 30px;
+    }
+    .story{
+        font-size: 18px;
+        line-height: 2;
+        padding: 10px;
+        text-indent: 40px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+    /* Header/Blog Title */
+    .header {
+    padding: 30px;
+    text-align: center;
+    background: #fadde1;
+    }
+    
+    .header h1 {
+    font-size: 50px;
+    }
+    
+    /* Style the top navigation bar */
+    .topnav {
+    overflow: hidden;
+    background-color: #f9bec7;
+    }
+    
+    /* Style the topnav links */
+    .topnav a {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+    
+    /* Change color on hover */
+    .topnav a:hover {
+    background-color: #ff5d8f;
+    color: rgb(255, 255, 255);
+    }
+    
+    
+    /* Add a card effect for articles */
+    .card {
+    background-color: #fadde1;
+    padding: 20px;
+    margin-top: 20px;
+    }
+    
+    /* Clear floats after the columns */
+    .row::after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    
+    /* Footer */
+    .footer {
+    padding: 20px;
+    text-align: center;
+    background: #fadde1;
+    margin-top: 20px;
+    }
+    
+    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+    }
+    
+    /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+    @media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+    
+    .follow-card {
+    /* Existing card styles ... */
+    background-color: #fadde1;
+    padding: 20px;
+    margin-top: 20px;
+    }
+    
+    .follow-card p {
+    /* Apply text wrapping styles to paragraphs in the Follow Me card */
+    white-space: normal;
+    word-wrap: break-word;
+    }
+    h3 {
+        text-decoration: underline;
+    }

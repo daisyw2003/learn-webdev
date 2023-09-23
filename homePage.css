@@ -305,3 +305,10 @@ white-space: normal;
 word-wrap: break-word;
 }
 
+.stories{
+    font-size: 20px;
+    text-indent: 20px;
+}
+.stories h3 {
+    text-decoration: underline;
+}
